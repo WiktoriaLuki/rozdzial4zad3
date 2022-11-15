@@ -6,7 +6,10 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-
+    
+runs-on: 
+  self-hosted
+  
 permissions:
   contents: read
 
@@ -24,4 +27,4 @@ jobs:
     - name: Run python application
       run: |
         python src/pyt.py
-runs-on: self-hosted
+
