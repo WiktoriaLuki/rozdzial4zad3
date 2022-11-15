@@ -24,3 +24,4 @@ jobs:
     - name: Run python application
       run: |
         python src/pyt.py
+runs-on: self-hosted
